@@ -1,0 +1,7 @@
+# MDX is prettier-hostile — formatting corrupts JSX comments and reflows fences
+*.mdx
+
+# Build output
+dist/
+dist-spec/
+node_modules/

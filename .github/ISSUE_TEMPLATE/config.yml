@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 💳 Pricing & commercial licensing
+    url: https://geoicons.io/pricing
+    about: Choosing a plan, or unsure whether you need a commercial license? Start here.
+  - name: 📖 Documentation
+    url: https://geoicons.io/docs
+    about: Installation, usage, styling, and API reference for every framework.
+  - name: ✉️ Contact support
+    url: mailto:support@geoicons.io
+    about: Licensing, billing, or private questions.

@@ -1,0 +1,18 @@
+# Dependencies
+node_modules/
+
+# Build output — shipped in the npm tarball, not committed
+dist/
+dist-spec/
+*.tsbuildinfo
+
+# Logs / env / editor cruft
+*.log
+.env
+.env.*
+.DS_Store
+.idea/
+.vscode/
+
+# Test artifact
+qa-preview.html

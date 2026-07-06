@@ -1,0 +1,45 @@
+{
+  "name": "@geoicons/core",
+  "version": "1.0.0",
+  "description": "Framework-agnostic core for GeoIcons — offline ES256 license verification and the embedded public key. Shared by every framework package.",
+  "license": "GPL-3.0-only",
+  "author": "GeoIcons (https://geoicons.io)",
+  "homepage": "https://geoicons.io",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/getgeoicons/geoicons.git"
+  },
+  "bugs": {
+    "url": "https://github.com/getgeoicons/geoicons/issues"
+  },
+  "keywords": [
+    "geoicons",
+    "license",
+    "es256",
+    "offline-verification"
+  ],
+  "sideEffects": false,
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "default": "./dist/index.js"
+    }
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist",
+    "LICENSE",
+    "COMMERCIAL-LICENSE.md",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc --project tsconfig.build.json",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "typescript": "^6.0.3"
+  }
+}

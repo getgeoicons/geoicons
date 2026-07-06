@@ -1,0 +1,52 @@
+name: 🐛 Bug report
+description: Something in a GeoIcons package isn't working as expected.
+labels: ['bug']
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for the report. Please fill in enough for us to reproduce it.
+        For security issues, do **not** use this form — see SECURITY.md.
+  - type: dropdown
+    id: package
+    attributes:
+      label: Package
+      options:
+        - '@geoicons/react'
+        - '@geoicons/vue'
+        - '@geoicons/angular'
+        - '@geoicons/vanilla'
+        - '@geoicons/core'
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Package version
+      placeholder: 'e.g. 1.0.0'
+    validations:
+      required: true
+  - type: input
+    id: framework-version
+    attributes:
+      label: Framework & version
+      placeholder: 'e.g. React 19.0.0 / Vue 3.5.0 / Angular 18 / n/a'
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction
+      description: Minimal steps or code. Include the icon name and the props you passed.
+      placeholder: |
+        import { Us } from '@geoicons/react/countries';
+        <Us size={48} strokeWidth={0.5} />
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected vs. actual
+      placeholder: 'Expected … but got …'
+    validations:
+      required: false
