@@ -1,0 +1,9 @@
+{
+  "$schema": "../../node_modules/ng-packagr/ng-package.schema.json",
+  "dest": "dist",
+  "assets": ["./COMMERCIAL-LICENSE.md"],
+  "allowedNonPeerDependencies": ["@geoicons/core"],
+  "lib": {
+    "entryFile": "src/public-api.ts"
+  }
+}

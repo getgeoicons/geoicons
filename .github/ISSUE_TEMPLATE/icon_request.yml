@@ -1,0 +1,30 @@
+name: 🗺️ Icon / country request
+description: Request a country, territory, or world area that's missing from the catalog.
+labels: ['icon request']
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Before filing, please search the [catalog](https://geoicons.io/icons) — it may already exist under an alternate name.
+  - type: input
+    id: name
+    attributes:
+      label: Name
+      description: The country, territory, or area you'd like added.
+      placeholder: 'e.g. Kosovo, Balkans, Sahel'
+    validations:
+      required: true
+  - type: input
+    id: iso
+    attributes:
+      label: ISO code (if a country/territory, and you know it)
+      placeholder: 'e.g. XK (ISO 3166-1)'
+    validations:
+      required: false
+  - type: textarea
+    id: usecase
+    attributes:
+      label: Use case
+      description: What are you building? Helps us prioritize.
+    validations:
+      required: false

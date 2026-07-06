@@ -1,0 +1,63 @@
+{
+  "name": "@geoicons/angular",
+  "version": "1.0.0",
+  "description": "Premium geographic map icons for Angular — 422 tree-shakeable standalone components (countries & areas), dual-licensed GPLv3 + Commercial.",
+  "license": "GPL-3.0-only",
+  "author": "GeoIcons (https://geoicons.io)",
+  "homepage": "https://geoicons.io",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/getgeoicons/geoicons.git"
+  },
+  "bugs": {
+    "url": "https://github.com/getgeoicons/geoicons/issues"
+  },
+  "keywords": [
+    "geoicons",
+    "angular",
+    "icons",
+    "svg",
+    "geography",
+    "countries",
+    "maps",
+    "iso-3166"
+  ],
+  "sideEffects": false,
+  "//": "main/module/types intentionally omitted: ng-packagr generates the published dist/package.json manifest; the exports map below is only for local (test/site) resolution.",
+  "exports": {
+    "./package.json": "./package.json",
+    ".": {
+      "types": "./dist/types/geoicons-angular.d.ts",
+      "default": "./dist/fesm2022/geoicons-angular.mjs"
+    },
+    "./countries": {
+      "types": "./dist/types/geoicons-angular-countries.d.ts",
+      "default": "./dist/fesm2022/geoicons-angular-countries.mjs"
+    },
+    "./areas": {
+      "types": "./dist/types/geoicons-angular-areas.d.ts",
+      "default": "./dist/fesm2022/geoicons-angular-areas.mjs"
+    }
+  },
+  "peerDependencies": {
+    "@angular/common": ">=15.1.0",
+    "@angular/core": ">=15.1.0",
+    "rxjs": ">=7.0.0"
+  },
+  "dependencies": {
+    "@geoicons/core": "^1.0.0",
+    "tslib": "^2.3.0"
+  },
+  "scripts": {
+    "build": "ng-packagr -p ng-package.json -c tsconfig.lib.json"
+  },
+  "devDependencies": {
+    "@angular/compiler": "^22.0.5",
+    "@angular/compiler-cli": "^22.0.5",
+    "@angular/platform-browser": "^22.0.5",
+    "@angular/platform-browser-dynamic": "^22.0.5",
+    "@angular/platform-server": "^22.0.5",
+    "ng-packagr": "^22.0.1",
+    "zone.js": "^0.16.2"
+  }
+}

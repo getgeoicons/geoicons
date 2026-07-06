@@ -1,0 +1,62 @@
+{
+  "name": "@geoicons/react",
+  "version": "1.0.0",
+  "description": "199 country map SVG icons as tree-shakeable React components — control weight and fill with strokeWidth and color props, themed via currentColor.",
+  "license": "GPL-3.0-only",
+  "author": "GeoIcons (https://geoicons.io)",
+  "homepage": "https://geoicons.io",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/getgeoicons/geoicons.git"
+  },
+  "bugs": {
+    "url": "https://github.com/getgeoicons/geoicons/issues"
+  },
+  "keywords": [
+    "geography",
+    "icons",
+    "svg",
+    "maps",
+    "countries",
+    "react",
+    "iso-3166"
+  ],
+  "sideEffects": false,
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./areas": {
+      "types": "./dist/areas/base/index.d.ts",
+      "import": "./dist/areas/base/index.js"
+    },
+    "./countries": {
+      "types": "./dist/countries/base/index.d.ts",
+      "import": "./dist/countries/base/index.js"
+    }
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist",
+    "LICENSE",
+    "COMMERCIAL-LICENSE.md",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc --project tsconfig.build.json",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@geoicons/core": "^1.0.0"
+  },
+  "peerDependencies": {
+    "react": ">=18.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.16",
+    "typescript": "^6.0.3"
+  }
+}

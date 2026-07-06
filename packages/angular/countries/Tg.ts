@@ -1,0 +1,22 @@
+// SPDX-License-Identifier: GPL-3.0-only
+// Commercial license available at https://geoicons.io
+import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
+import { NgIf } from '@angular/common';
+import { GeoIconBase } from '@geoicons/angular';
+
+@Component({
+  selector: 'geoicon-tg',
+  standalone: true,
+  changeDetection: ChangeDetectionStrategy.OnPush,
+  imports: [NgIf],
+  hostDirectives: [
+    {
+      directive: GeoIconBase,
+      inputs: ['size', 'strokeWidth', 'stroke', 'fill', 'aria-label'],
+    },
+  ],
+  template: `<svg viewBox="0 0 24 24" [attr.width]="b.size" [attr.height]="b.size" [attr.stroke]="b.stroke" [attr.stroke-width]="b.strokeWidth" [attr.fill]="b.fill" [attr.role]="b.ariaLabel ? 'img' : null" [attr.aria-labelledby]="b.ariaLabel ? b.titleId : null" [attr.aria-hidden]="b.ariaLabel ? null : 'true'"><title *ngIf="b.ariaLabel" [id]="b.titleId">{{ b.ariaLabel }}</title><path stroke-linejoin="round" d="m15.166 19.163 1.082 2.773-3.024.864-2.477-3.194a1 1 0 0 1-.2-.753l.708-5.02a.5.5 0 0 0-.069-.33l-1.16-1.894a.5.5 0 0 1-.056-.394l.568-2.067a.5.5 0 0 0-.46-.632l-.41-.02a.5.5 0 0 1-.473-.567l.393-2.864a.5.5 0 0 0-.164-.442L7.982 3.347a.5.5 0 0 1-.153-.5L8.256 1.2l3.96.504-.624 2.373a.5.5 0 0 0 .226.556l1.732 1.04a1 1 0 0 1 .485.822l.045 1.32a1 1 0 0 0 .111.425l.863 1.668a1 1 0 0 1 .112.468l-.068 8.416a1 1 0 0 0 .068.371Z"/></svg>`,
+})
+export class Tg {
+  protected readonly b = inject(GeoIconBase);
+}
