@@ -310,7 +310,7 @@ const html = `<!DOCTYPE html>
 </body>
 </html>`;
 
-const outPath = join(process.cwd(), 'qa-preview.html');
-writeFileSync(outPath, html);
-console.log(`\nVisual preview written → qa-preview.html`);
+  const outPath = process.env.QA_PREVIEW_OUT || join(process.cwd(), 'qa-preview.html');
+  writeFileSync(outPath, html, 'utf-8');
+  console.log(`\nVisual preview written → ${outPath}`);
 if (failed > 0) process.exit(1);
