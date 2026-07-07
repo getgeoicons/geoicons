@@ -1,6 +1,6 @@
 {
   "name": "@geoicons/core",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Framework-agnostic core for GeoIcons — offline ES256 license verification and the embedded public key. Shared by every framework package.",
   "license": "GPL-3.0-only",
   "author": "GeoIcons (https://geoicons.io)",
