@@ -1,6 +1,6 @@
 {
   "name": "@geoicons/react",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "199 country map SVG icons as tree-shakeable React components — control weight and fill with strokeWidth and color props, themed via currentColor.",
   "license": "GPL-3.0-only",
   "author": "GeoIcons (https://geoicons.io)",

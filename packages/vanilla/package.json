@@ -1,6 +1,6 @@
 {
   "name": "@geoicons/vanilla",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Geographic map SVG icons as tree-shakeable vanilla-JS DOM factories — no framework, returns a live <svg>; control weight and fill with strokeWidth and native SVG attributes, themed via currentColor.",
   "license": "GPL-3.0-only",
   "author": "GeoIcons (https://geoicons.io)",
