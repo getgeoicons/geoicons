@@ -12,8 +12,7 @@ import {
 } from '@geoicons/core';
 
 /**
- * React license layer for GeoIcons. The actual verification (offline ES256, native Web
- * Crypto) lives in the framework-agnostic @geoicons/core; this is just the React wrapper.
+ * React license layer for GeoIcons.
  *
  * - NOT a lock: enforcement is legal (GPLv3 + commercial). An unverified state only emits a
  *   one-time console warning — icons always render normally, no watermark.
@@ -51,12 +50,18 @@ export interface IconProviderProps {
  * so tree-shaking is unaffected.
  */
 export function IconProvider({ licenseKey, children }: IconProviderProps) {
-  const [state, setState] = useState<LicenseState>({ status: 'unverified' });
+  // Register during render — BEFORE children render and call noteIconRender(). React renders
+  // a parent before its children, so this deterministically wins the race with the icon-level
+  // notice. Doing this in useEffect (commit phase) is too late: icons render first, schedule
+  // their deferred warning, and it can fire before the provider's passive effect flushes.
+  // The lazy initializer runs it exactly once per mount (still during render), keeping the
+  // ordering guarantee without repeating the (idempotent) call on every re-render.
+  const [state, setState] = useState<LicenseState>(() => {
+    markProviderPresent();
+    return { status: 'unverified' };
+  });
 
   useEffect(() => {
-    // Register synchronously-as-possible so the icon-level notice knows a provider exists
-    // and stays quiet — even while the async verify below is still in flight.
-    markProviderPresent();
     let active = true;
     resolveStatus(licenseKey).then((status) => {
       if (!active) return;
