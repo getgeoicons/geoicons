@@ -1,0 +1,66 @@
+name: Release
+
+# Publishes every @geoicons/* package to npm with provenance.
+# Auth is tokenless via npm Trusted Publishing (OIDC) — no NPM_TOKEN secret.
+# Each package must have a Trusted Publisher configured on npmjs.com pointing
+# at this repository and this workflow file.
+
+on:
+  release:
+    types: [published]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  id-token: write # required for OIDC trusted publishing + provenance
+
+concurrency:
+  group: release
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    name: Build & publish to npm
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4.3.1
+
+      - name: Setup Node
+        uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4.4.0
+        with:
+          node-version-file: .nvmrc
+          registry-url: https://registry.npmjs.org
+          cache: npm
+
+      # Trusted publishing (OIDC) requires npm >= 11.5.1; Node 22 ships 10.x.
+      - name: Upgrade npm
+        run: npm install --global npm@latest
+
+      - name: Install
+        run: npm ci
+
+      - name: Build
+        run: npm run build
+
+      # Publish each package only if that exact version is not already on npm,
+      # so a release that bumps only some packages does not fail on the rest.
+      - name: Publish
+        run: |
+          set -euo pipefail
+          publish() {
+            dir="$1"
+            name="$(node -p "require('./$dir/package.json').name")"
+            version="$(node -p "require('./$dir/package.json').version")"
+            if npm view "$name@$version" version >/dev/null 2>&1; then
+              echo "skip $name@$version (already published)"
+            else
+              echo "publish $name@$version"
+              npm publish "./$dir" --provenance --access public
+            fi
+          }
+          publish packages/core
+          publish packages/react
+          publish packages/vue
+          publish packages/vanilla
+          publish packages/angular/dist
