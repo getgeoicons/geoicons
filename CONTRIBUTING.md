@@ -8,18 +8,22 @@ This repository is the **public distribution mirror** of GeoIcons, a **dual-lice
 
 Please don't be discouraged — the two things below genuinely help.
 
-## ✅ What you *can* do
+## ✅ What you _can_ do
 
 ### Report a bug
+
 Open a [bug report](https://github.com/getgeoicons/geoicons/issues/new?template=bug_report.yml). Useful ones include:
+
 - the package and version (`@geoicons/react@x.y.z`),
 - framework + version,
 - a minimal reproduction (icon name, props, expected vs. actual).
 
 ### Request an icon or country
+
 Missing a country, territory, or world area? Open an [icon request](https://github.com/getgeoicons/geoicons/issues/new?template=icon_request.yml). Tell us the name (and ISO code if you know it) and, briefly, the use case. New geography is added upstream and published to npm.
 
 ### Ask about licensing
+
 Not sure whether you need a commercial license? Check [geoicons.io/pricing](https://geoicons.io/pricing) or email **support@geoicons.io**.
 
 ## Reporting security issues

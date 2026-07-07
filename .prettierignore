@@ -5,3 +5,11 @@
 dist/
 dist-spec/
 node_modules/
+
+# Distribution packages are produced by the upstream factory pipeline —
+# their formatting is owned there, not hand-maintained in this mirror.
+packages/
+
+# Legal texts — never auto-reformat
+LICENSE
+COMMERCIAL-LICENSE.md
