@@ -1,6 +1,6 @@
 {
   "name": "@geoicons/angular",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Premium geographic map icons for Angular — 422 tree-shakeable standalone components (countries & areas), dual-licensed GPLv3 + Commercial.",
   "license": "GPL-3.0-only",
   "author": "GeoIcons (https://geoicons.io)",
@@ -45,7 +45,7 @@
     "rxjs": ">=7.0.0"
   },
   "dependencies": {
-    "@geoicons/core": "^1.0.0",
+    "@geoicons/core": "^1.1.0",
     "tslib": "^2.3.0"
   },
   "scripts": {

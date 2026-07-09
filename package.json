@@ -1,6 +1,6 @@
 {
   "name": "geoicons-distribution",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "GeoIcons — premium geographic map icons for React, Vue, Angular, and vanilla JS. Dual-licensed GPLv3 or Commercial.",
   "private": true,
   "type": "commonjs",
@@ -22,6 +22,7 @@
   "packageManager": "npm@10.9.2",
   "scripts": {
     "build": "npm --prefix packages/core run build && npm --prefix packages/react run build && npm --prefix packages/vue run build && npm --prefix packages/angular run build && npm --prefix packages/vanilla run build",
+    "release": "node scripts/release.mjs",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "typecheck": "tsc --noEmit -p packages/core/tsconfig.json && tsc --noEmit -p packages/react/tsconfig.json && tsc --noEmit -p packages/vue/tsconfig.json && tsc --noEmit -p packages/vanilla/tsconfig.json && tsc --noEmit -p packages/angular/tsconfig.typecheck.json"
