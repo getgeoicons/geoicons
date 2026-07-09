@@ -20,8 +20,7 @@ if (!/^\d+\.\d+\.\d+(-[\w.]+)?$/.test(version ?? '')) {
   process.exit(1);
 }
 
-const git = (...args) =>
-  execFileSync('git', args, { cwd: root, stdio: 'inherit' });
+const git = (...args) => execFileSync('git', args, { cwd: root, stdio: 'inherit' });
 
 if (execFileSync('git', ['status', '--porcelain'], { cwd: root }).length) {
   console.error('Working tree not clean. Commit or stash first.');
