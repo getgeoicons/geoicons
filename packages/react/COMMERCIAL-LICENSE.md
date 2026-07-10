@@ -9,9 +9,9 @@ Copyright © 2026 GeoIcons · https://geoicons.io
 
 GeoIcons is distributed under a **dual-license model**:
 
-- **GNU General Public License v3.0 (GPL-3.0-only)** — free for open-source projects
+- **GNU General Public License v3.0 (GPL-3.0-only)**: free for open-source projects
   whose entire codebase is also released under GPLv3 (see [`LICENSE`](./LICENSE)).
-- **This Commercial License** — for closed-source, proprietary, or commercial
+- **This Commercial License**: for closed-source, proprietary, or commercial
   applications that cannot comply with GPLv3 copyleft.
 
 If your project is **not** open-sourced under GPLv3, you must purchase a Commercial
@@ -21,22 +21,22 @@ License at **https://geoicons.io** before using GeoIcons.
 
 ## 2. Definitions
 
-- **"GeoIcons"** or the **"Software"** — the GeoIcons icon set and the accompanying
+- **"GeoIcons"** or the **"Software"**: the GeoIcons icon set and the accompanying
   framework packages (such as `@geoicons/react` and `@geoicons/core`, with additional
   framework packages planned), in source or compiled form, together with any updates
   the Licensee obtains.
-- **"Licensor"** — GeoIcons, the owner and provider of the Software.
-- **"Licensee"** — the individual or legal entity that purchases a tier under this
+- **"Licensor"**: GeoIcons, the owner and provider of the Software.
+- **"Licensee"**: the individual or legal entity that purchases a tier under this
   agreement, identified by the purchase record described in §3.
-- **"License Key"** — the cryptographically signed token issued to the Licensee at
+- **"License Key"**: the cryptographically signed token issued to the Licensee at
   purchase, serving as permanent proof of purchase (see §6).
-- **"Tier"** — the purchased license scope (Hobby, Business, or Extended) defined in
+- **"Tier"**: the purchased license scope (Hobby, Business, or Extended) defined in
   §5, which fixes the license terms but never the set of icons available.
-- **"Product"** — a single application, website, or distributable created by the
+- **"Product"**: a single application, website, or distributable created by the
   Licensee that incorporates the Software.
-- **"Developer"** — an individual who works on source code that incorporates the
+- **"Developer"**: an individual who works on source code that incorporates the
   Software.
-- **"Redistribution"** — shipping GeoIcons as part of a product that produces copies
+- **"Redistribution"**: shipping GeoIcons as part of a product that produces copies
   which each use the icons (e.g., SDKs, site/app builders, themes, templates), as
   distinct from using the icons within the Licensee's own Product.
 
@@ -66,7 +66,7 @@ Upon purchase of the applicable tier, the Licensor grants the Licensee a
 - Make modifications for the Licensee's own internal use.
 
 This license is **permanent**. The License Key issued at purchase is a perpetual
-proof of purchase — it has no expiry and no version gate, and covers all current and
+proof of purchase. It has no expiry and no version gate, and covers all current and
 future versions of GeoIcons for the purchased tier.
 
 ---
@@ -75,19 +75,19 @@ future versions of GeoIcons for the purchased tier.
 
 All tiers grant access to the identical, complete icon set. The tier defines the
 **license terms** (how many developers and products it covers, and whether
-redistribution is permitted) — not which icons you can use.
+redistribution is permitted), not which icons you can use.
 
 ### Hobby
 - 1 developer
 - 1 product
-- Use in closed-source & commercial apps — no redistribution
+- Use in closed-source and commercial apps, no redistribution
 - Email support
 - Free updates as the catalog grows
 
 ### Business
 - Unlimited developers
 - Unlimited products
-- Use in closed-source & commercial apps — no redistribution
+- Use in closed-source and commercial apps, no redistribution
 - Priority email support
 - Free updates as the catalog grows
 
@@ -100,7 +100,7 @@ redistribution is permitted) — not which icons you can use.
 
 **Source-file downloads.** Every paid tier additionally includes the GeoIcons Figma
 source file and the raw icon source files (SVG). These are provided for use within the
-scope of the purchased tier and remain subject to the Restrictions in §7 — in
+scope of the purchased tier and remain subject to the Restrictions in §7. In
 particular, they may not be redistributed as a standalone icon set except under the
 **Extended** tier.
 
@@ -108,13 +108,14 @@ particular, they may not be redistributed as a standalone icon set except under 
 
 ## 6. License Permanence & Updates
 
-- The license and its key are **permanent** — there is no expiry, no version gate,
+- The license and its key are **permanent**: there is no expiry, no version gate,
   and no upgrade fee. A purchased license covers all current and future versions of
   GeoIcons for its tier.
-- A tier may be offered as either a one-time (perpetual) purchase or an annual
-  billing option. Both deliver the same permanent key; the annual option is a method
-  of payment that keeps your updates current per the terms published at
-  https://geoicons.io, and does not gate continued use of versions already obtained.
+- A tier may be bought as a one-time (perpetual) purchase or on annual billing. Both
+  give you the same permanent key, and your right to use every version you have
+  received never expires. Annual billing is only a way to keep receiving new updates;
+  if it lapses, you keep everything already downloaded and simply stop getting new
+  releases, per the terms published at https://geoicons.io.
 
 ---
 
@@ -123,11 +124,15 @@ particular, they may not be redistributed as a standalone icon set except under 
 Except as expressly granted by the **Extended** tier (§5), the Licensee may **not**:
 
 - **Redistribute** GeoIcons as a standalone icon library, icon set, component
-  library, or similar product — whether free or paid.
+  library, or similar product, whether free or paid.
 - **Sublicense** or resell this license or the icons to third parties.
 - Remove, alter, or obscure any copyright notice, attribution, or license reference
   in the source code or documentation.
-- Use GeoIcons in any application that itself provides competing icon-library services.
+- Repackage GeoIcons, in whole or in substantial part, as a competing icon library
+  or icon-delivery service.
+
+Building your own product with GeoIcons is always fine, even if that product competes
+with us. These restrictions only stop repackaging the icon set itself for others.
 
 ---
 
@@ -152,24 +157,24 @@ Attribution is not required. If you choose to credit GeoIcons, the preferred for
 
 ## 10. Warranty Disclaimer
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED,
-INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A
-PARTICULAR PURPOSE, AND NONINFRINGEMENT. THE LICENSOR DOES NOT WARRANT THAT THE
-SOFTWARE WILL BE ERROR-FREE OR THAT ITS USE WILL BE UNINTERRUPTED. GEOGRAPHIC
-SHAPES AND BORDERS ARE PROVIDED FOR ILLUSTRATIVE PURPOSES AND DO NOT REPRESENT ANY
-POSITION ON DISPUTED TERRITORIES OR SOVEREIGNTY.
+The Software is provided "as is", without warranty of any kind, express or implied,
+including but not limited to the warranties of merchantability, fitness for a
+particular purpose, and noninfringement. The Licensor does not warrant that the
+Software will be error-free or that its use will be uninterrupted. Geographic shapes
+and borders are provided for illustrative purposes and do not represent any position
+on disputed territories or sovereignty.
 
 ---
 
 ## 11. Limitation of Liability
 
-TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL THE LICENSOR BE
-LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, OR
-FOR ANY LOSS OF PROFITS, REVENUE, DATA, OR GOODWILL, ARISING OUT OF OR RELATED TO
-THIS AGREEMENT OR THE USE OF THE SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
-SUCH DAMAGES. THE LICENSOR'S TOTAL AGGREGATE LIABILITY UNDER THIS AGREEMENT SHALL
-NOT EXCEED THE AMOUNT PAID BY THE LICENSEE FOR THE APPLICABLE LICENSE IN THE TWELVE
-(12) MONTHS PRECEDING THE EVENT GIVING RISE TO THE CLAIM.
+To the maximum extent permitted by applicable law, in no event shall the Licensor be
+liable for any indirect, incidental, special, consequential, or punitive damages, or
+for any loss of profits, revenue, data, or goodwill, arising out of or related to this
+agreement or the use of the Software, even if advised of the possibility of such
+damages. The Licensor's total aggregate liability under this agreement shall not
+exceed the amount paid by the Licensee for the applicable license in the twelve (12)
+months preceding the event giving rise to the claim.
 
 ---
 
