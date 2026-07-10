@@ -35,7 +35,10 @@ jobs:
           # forces token auth and breaks OIDC trusted publishing. npm defaults
           # to registry.npmjs.org, which is what we publish to.
 
-      # Trusted publishing (OIDC) requires npm >= 11.5.1; Node 22 ships 10.x.
+      # Trusted publishing (OIDC) requires npm >= 11.5.1. Node 24 already ships
+      # npm 11.x, so this is a safe same-major bump to the latest patch. (Do NOT
+      # run this on Node 22's npm 10.x: the cross-major self-upgrade corrupts the
+      # global install and drops the `sigstore` module that --provenance needs.)
       - name: Upgrade npm
         run: |
           npm install --global npm@latest
