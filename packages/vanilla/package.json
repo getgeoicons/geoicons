@@ -1,6 +1,6 @@
 {
   "name": "@geoicons/vanilla",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "422 geographic map SVG icons (255 countries & territories + 167 world areas) as tree-shakeable vanilla-JS DOM factories — no framework, returns a live <svg>; control weight and fill, themed via currentColor.",
   "license": "GPL-3.0-only",
   "author": "GeoIcons (https://geoicons.io)",
@@ -61,7 +61,7 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@geoicons/core": "^1.1.0"
+    "@geoicons/core": "^1.1.1"
   },
   "devDependencies": {
     "typescript": "^6.0.3"
