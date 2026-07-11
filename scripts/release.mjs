@@ -48,7 +48,8 @@ execFileSync('npm', ['install', '--package-lock-only'], {
 
 git('add', '-A');
 git('commit', '-m', `Release: v${version}`);
-git('tag', `v${version}`);
+// Annotated tag (not lightweight) so `git push --follow-tags` actually pushes it.
+git('tag', '-a', `v${version}`, '-m', `Release: v${version}`);
 git('push', 'origin', 'HEAD', '--follow-tags');
 
 console.log(`\nPushed v${version}. Publish the tag as a GitHub Release to ship to npm.`);
