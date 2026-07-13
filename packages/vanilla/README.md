@@ -2,9 +2,9 @@
 
 [![npm version](https://img.shields.io/npm/v/@geoicons/vanilla.svg)](https://www.npmjs.com/package/@geoicons/vanilla)
 [![license](https://img.shields.io/npm/l/@geoicons/vanilla.svg)](./LICENSE)
-[![tree-shakeable](https://img.shields.io/badge/tree--shakeable-yes-brightgreen.svg)](#tree-shaking)
+[![tree-shakable](https://img.shields.io/badge/tree--shakable-yes-brightgreen.svg)](#tree-shaking)
 
-**422 geographic map icons as tree-shakeable vanilla-JS components** - 255 countries + 167 areas (continents, regions, blocs, landforms). Fully customizable stroke width and color via CSS; icons inherit `currentColor` by default, so they adapt to your text color out of the box.
+**422 geographic map icons as tree-shakable vanilla-JS components** - 255 countries + 167 areas (continents, regions, blocs, landforms). Fully customizable stroke width and color via CSS; icons inherit `currentColor` by default, so they adapt to your text color out of the box.
 
 > ⚖️ **Dual-licensed: GPLv3 _or_ Commercial.**
 > Free to use in open-source projects under **GPL-3.0-only** (your project must also be GPL).
@@ -43,7 +43,7 @@ Each `<i data-geoicon="us">` is replaced by that icon's `<svg>`. Elements whose 
 
 ### Why the import map
 
-The `{ us: Us }` map is what keeps the package tree-shakeable: because you statically `import { Us }`, the bundler ships only that icon. HTML attributes are invisible to bundlers, so an icon you reference in markup but never register simply won't render - which is exactly what stops the whole 422-icon catalog from being pulled in. (This is the deliberate difference from Lucide's zero-argument `createIcons()`, which reaches into a full internal registry.)
+The `{ us: Us }` map is what keeps the package tree-shakable: because you statically `import { Us }`, the bundler ships only that icon. HTML attributes are invisible to bundlers, so an icon you reference in markup but never register simply won't render - which is exactly what stops the whole 422-icon catalog from being pulled in. (This is the deliberate difference from Lucide's zero-argument `createIcons()`, which reaches into a full internal registry.)
 
 ## Styling - all CSS
 

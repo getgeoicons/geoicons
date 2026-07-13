@@ -3,7 +3,7 @@
 
 /**
  * Opt-in DOM scanner — the `<i data-geoicon="us"></i>` ergonomics, kept
- * tree-shakeable. Unlike Lucide's zero-arg `createIcons()` (which reaches into a
+ * tree-shakable. Unlike Lucide's zero-arg `createIcons()` (which reaches into a
  * full internal registry and pulls the whole catalog), this helper holds NO icon
  * references itself: the caller supplies the `{ key → factory }` map from their
  * own named imports, so only the icons they wire can ever enter the bundle.

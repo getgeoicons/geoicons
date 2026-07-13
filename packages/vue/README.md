@@ -2,9 +2,9 @@
 
 [![npm version](https://img.shields.io/npm/v/@geoicons/vue.svg)](https://www.npmjs.com/package/@geoicons/vue)
 [![license](https://img.shields.io/npm/l/@geoicons/vue.svg)](./LICENSE)
-[![tree-shakeable](https://img.shields.io/badge/tree--shakeable-yes-brightgreen.svg)](#tree-shaking)
+[![tree-shakable](https://img.shields.io/badge/tree--shakable-yes-brightgreen.svg)](#tree-shaking)
 
-**422 geographic map icons as tree-shakeable Vue 3 components** - 255 countries + 167 areas (continents, regions, blocs, landforms). Fully customizable stroke width and color via props; icons inherit `currentColor` by default, so they adapt to your text color out of the box.
+**422 geographic map icons as tree-shakable Vue 3 components** - 255 countries + 167 areas (continents, regions, blocs, landforms). Fully customizable stroke width and color via props; icons inherit `currentColor` by default, so they adapt to your text color out of the box.
 
 > ⚖️ **Dual-licensed: GPLv3 _or_ Commercial.**
 > Free to use in open-source projects under **GPL-3.0-only** (your project must also be GPL).

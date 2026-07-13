@@ -2,7 +2,7 @@
 
 # GeoIcons
 
-**Premium geographic map icons - 422 countries, territories & world areas - as tree-shakeable components for React, Vue, Angular, and vanilla JS.**
+**Premium geographic map icons - 422 countries, territories & world areas - as tree-shakable components for React, Vue, Angular, and vanilla JS.**
 
 [geoicons.io](https://geoicons.io) · [Browse the catalog](https://geoicons.io/icons) · [Docs](https://geoicons.io/docs) · [Pricing](https://geoicons.io/pricing)
 
@@ -66,7 +66,7 @@ No config, no CSS import - icons inherit `currentColor`. Full per-framework usag
 ## Why GeoIcons
 
 - **422 icons** - every country & territory (ISO 3166-1) plus continents, sub-regions, blocs, peninsulas, deserts, basins, and seas. The catalog keeps growing.
-- **Tree-shakeable** - every icon is its own named export. `import { Us, Jp }` ships _only_ those two, never the whole set. All packages are `"sideEffects": false`.
+- **Tree-shakable** - every icon is its own named export. `import { Us, Jp }` ships _only_ those two, never the whole set. All packages are `"sideEffects": false`.
 - **Styleable** - one consistent 24×24 outline system. Set `size` and `strokeWidth`; color via native `stroke`/`fill` (themes through `currentColor`).
 - **Accessible by default** - decorative (`aria-hidden`) unless you pass an `aria-label`, which switches to `role="img"` + `<title>`.
 - **Zero runtime deps** - offline ES256 license verification via native Web Crypto.
