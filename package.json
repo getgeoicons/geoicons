@@ -1,6 +1,6 @@
 {
   "name": "geoicons-distribution",
-  "version": "1.1.1",
+  "version": "1.2.0",
   "description": "GeoIcons — premium geographic map icons for React, Vue, Angular, and vanilla JS. Dual-licensed GPLv3 or Commercial.",
   "private": true,
   "type": "commonjs",
