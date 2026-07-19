@@ -28,7 +28,7 @@
     "typecheck": "tsc --noEmit -p packages/core/tsconfig.json && tsc --noEmit -p packages/react/tsconfig.json && tsc --noEmit -p packages/vue/tsconfig.json && tsc --noEmit -p packages/vanilla/tsconfig.json && tsc --noEmit -p packages/angular/tsconfig.typecheck.json"
   },
   "devDependencies": {
-    "prettier": "^3.4.2",
+    "prettier": "^3.9.5",
     "typescript": "^6.0.3"
   }
 }
