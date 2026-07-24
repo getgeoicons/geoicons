@@ -16,3 +16,8 @@ dist-spec/
 
 # Test artifact
 qa-preview.html
+
+# design-sync (claude.ai/design) — kept fully local, never committed
+.ds-sync/
+ds-bundle/
+.design-sync/
