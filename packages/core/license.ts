@@ -13,7 +13,7 @@
  * - See docs/business-architecture.md for the full model.
  */
 
-import { PUBLIC_KEY_JWK } from './_public-key';
+import { PUBLIC_KEY_JWK } from './_public-key.js';
 
 /** Open-source projects declare GPL compliance with this exact string (FullCalendar precedent). */
 export const GPL_DECLARATION = 'GPL-MY-PROJECT-IS-OPEN-SOURCE';

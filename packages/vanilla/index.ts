@@ -2,5 +2,5 @@
 // Commercial license available at https://geoicons.io
 // Root entry — the licensing API + the opt-in DOM-scanner helper.
 // Icons are imported from subpaths (tree-shakable): '@geoicons/vanilla/countries', '/areas'.
-export { initGeoiconsLicense, verifyLicenseKey, GPL_DECLARATION, type LicenseStatus } from './_license';
-export { createGeoIcons, type IconFactory, type CreateGeoIconsOptions } from './_scanner';
+export { initGeoiconsLicense, verifyLicenseKey, GPL_DECLARATION, type LicenseStatus } from './_license.js';
+export { createGeoIcons, type IconFactory, type CreateGeoIconsOptions } from './_scanner.js';

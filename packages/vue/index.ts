@@ -9,4 +9,4 @@ export {
   GPL_DECLARATION,
   type GeoiconsPluginOptions,
   type LicenseStatus,
-} from './_license';
+} from './_license.js';
