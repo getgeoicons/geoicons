@@ -1,7 +1,7 @@
 {
   "name": "@geoicons/vue",
   "version": "1.2.0",
-  "description": "422 geographic map SVG icons (255 countries & territories + 167 world areas) as tree-shakable Vue 3 components — control weight and fill with strokeWidth and native SVG attributes, themed via currentColor.",
+  "description": "799 geographic map SVG icons (255 countries & territories + 167 world areas + 377 subdivisions) as tree-shakable Vue 3 components — control weight and fill with strokeWidth and native SVG attributes, themed via currentColor.",
   "license": "GPL-3.0-only",
   "author": "GeoIcons (https://geoicons.io)",
   "homepage": "https://geoicons.io",
@@ -46,6 +46,10 @@
     "./countries": {
       "types": "./dist/countries/base/index.d.ts",
       "import": "./dist/countries/base/index.js"
+    },
+    "./subdivisions": {
+      "types": "./dist/subdivisions/base/index.d.ts",
+      "import": "./dist/subdivisions/base/index.js"
     }
   },
   "main": "./dist/index.js",

@@ -1,7 +1,7 @@
 {
   "name": "@geoicons/angular",
   "version": "1.2.0",
-  "description": "422 geographic map SVG icons (255 countries & territories + 167 world areas) as tree-shakable Angular standalone components — control weight and fill, dual-licensed GPLv3 + Commercial.",
+  "description": "799 geographic map SVG icons (255 countries & territories + 167 world areas + 377 subdivisions) as tree-shakable Angular standalone components — control weight and fill, dual-licensed GPLv3 + Commercial.",
   "license": "GPL-3.0-only",
   "author": "GeoIcons (https://geoicons.io)",
   "homepage": "https://geoicons.io",
@@ -47,6 +47,10 @@
     "./areas": {
       "types": "./dist/types/geoicons-angular-areas.d.ts",
       "default": "./dist/fesm2022/geoicons-angular-areas.mjs"
+    },
+    "./subdivisions": {
+      "types": "./dist/types/geoicons-angular-subdivisions.d.ts",
+      "default": "./dist/fesm2022/geoicons-angular-subdivisions.mjs"
     }
   },
   "peerDependencies": {

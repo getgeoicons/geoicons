@@ -4,7 +4,7 @@
 [![license](https://img.shields.io/npm/l/@geoicons/angular.svg)](./LICENSE)
 [![tree-shakable](https://img.shields.io/badge/tree--shakable-yes-brightgreen.svg)](#tree-shaking)
 
-**422 geographic map icons as tree-shakable Angular standalone components** - 255 countries + 167 areas (continents, regions, blocs, landforms). Fully customizable stroke width and color via props; icons inherit `currentColor` by default, so they adapt to your text color out of the box.
+**799 geographic map icons as tree-shakable Angular standalone components** - 255 countries + 167 areas (continents, regions, blocs, landforms) + 377 subdivisions (states, provinces, parishes). Fully customizable stroke width and color via props; icons inherit `currentColor` by default, so they adapt to your text color out of the box.
 
 > ⚖️ **Dual-licensed: GPLv3 _or_ Commercial.**
 > Free to use in open-source projects under **GPL-3.0-only** (your project must also be GPL).
@@ -28,20 +28,22 @@ Each icon is a standalone component. Import the ones you use and add them to a c
 import { Component } from '@angular/core';
 import { Us, Jp } from '@geoicons/angular/countries';
 import { Africa } from '@geoicons/angular/areas';
+import { UsTexas } from '@geoicons/angular/subdivisions';
 
 @Component({
   selector: 'app-root',
-  imports: [Us, Jp, Africa],
+  imports: [Us, Jp, Africa, UsTexas],
   template: `
     <geoicon-us [size]="48" />
     <geoicon-jp [size]="48" [strokeWidth]="0.5" class="text-blue-600" />
     <geoicon-africa [size]="48" />
+    <geoicon-us-texas [size]="48" />
   `,
 })
 export class App {}
 ```
 
-Countries live under `@geoicons/angular/countries`; areas (continents, regions, blocs, landforms) under `@geoicons/angular/areas`.
+Countries live under `@geoicons/angular/countries`; areas (continents, regions, blocs, landforms) under `@geoicons/angular/areas`; subdivisions (states, provinces, parishes) under `@geoicons/angular/subdivisions`.
 
 ## Props
 
@@ -65,11 +67,12 @@ Anything else - `class`, `style`, `data-*` - goes on the `<geoicon-*>` host elem
 
 ## Naming & imports
 
-Icons are named from **ISO 3166-1 alpha-2** codes (PascalCase → component + `geoicon-*` selector): `us` → `Us` / `<geoicon-us>`, `au-mainland` → `AuMainland` / `<geoicon-au-mainland>`. Areas use slug PascalCase: `africa` → `Africa`, `european-union-eu` → `EuropeanUnionEu`.
+Icons are named from **ISO 3166-1 alpha-2** codes (PascalCase → component + `geoicon-*` selector): `us` → `Us` / `<geoicon-us>`, `au-mainland` → `AuMainland` / `<geoicon-au-mainland>`. Areas use slug PascalCase: `africa` → `Africa`, `european-union-eu` → `EuropeanUnionEu`. Subdivisions are the parent country code plus the subdivision name: `us-texas` → `UsTexas` / `<geoicon-us-texas>`, `jm-kingston` → `JmKingston` / `<geoicon-jm-kingston>`.
 
 ```ts
 import { Us, Jp, Fr } from '@geoicons/angular/countries';
 import { Africa, Asia, Europe, EuropeanUnionEu } from '@geoicons/angular/areas';
+import { UsTexas, CaOntario, MxJalisco } from '@geoicons/angular/subdivisions';
 ```
 
 ## Accessibility

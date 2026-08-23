@@ -1,0 +1,22 @@
+// SPDX-License-Identifier: GPL-3.0-only
+// Commercial license available at https://geoicons.io
+import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
+import { NgIf } from '@angular/common';
+import { GeoIconBase } from '@geoicons/angular';
+
+@Component({
+  selector: 'geoicon-kn-christ-church-nichola-town',
+  standalone: true,
+  changeDetection: ChangeDetectionStrategy.OnPush,
+  imports: [NgIf],
+  hostDirectives: [
+    {
+      directive: GeoIconBase,
+      inputs: ['size', 'strokeWidth', 'stroke', 'fill', 'aria-label'],
+    },
+  ],
+  template: `<svg viewBox="0 0 24 24" [attr.width]="b.size" [attr.height]="b.size" [attr.stroke]="b.stroke" [attr.stroke-width]="b.strokeWidth" [attr.fill]="b.fill" [attr.role]="b.ariaLabel ? 'img' : null" [attr.aria-labelledby]="b.ariaLabel ? b.titleId : null" [attr.aria-hidden]="b.ariaLabel ? null : 'true'"><title *ngIf="b.ariaLabel" [id]="b.titleId">{{ b.ariaLabel }}</title><path stroke-linejoin="round" d="m4.728 17.762-2.413-2.707a.3.3 0 0 1-.007-.391l5.81-6.989a1 1 0 0 0 .23-.599l.077-1.91a1 1 0 0 1 .614-.883l.732-.306a1 1 0 0 0 .603-.772l.077-.506a1 1 0 0 1 .687-.802l2.2-.697 7.033 3.617a1 1 0 0 1 .4.374l.842 1.399a1 1 0 0 1 .085.852l-.21.589a1 1 0 0 1-.84.658l-.504.051a1 1 0 0 0-.63.314l-1.732 1.86a1 1 0 0 0-.264.585l-.122 1.255a1 1 0 0 1-.24.557l-1.737 2.008a2 2 0 0 0-.467 1.019l-.407 2.776a2 2 0 0 0 .069.884l.473 1.52q.043.141.018.285l-.076.42a.6.6 0 0 1-.682.486l-1.913-.296a2 2 0 0 1-.414-.11l-7.19-2.77a.3.3 0 0 1-.189-.32l.16-1.212a.3.3 0 0 0-.073-.239Z"/></svg>`,
+})
+export class KnChristChurchNicholaTown {
+  protected readonly b = inject(GeoIconBase);
+}

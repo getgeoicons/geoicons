@@ -4,7 +4,7 @@
 [![license](https://img.shields.io/npm/l/@geoicons/vanilla.svg)](./LICENSE)
 [![tree-shakable](https://img.shields.io/badge/tree--shakable-yes-brightgreen.svg)](#tree-shaking)
 
-**422 geographic map icons as tree-shakable vanilla-JS components** - 255 countries + 167 areas (continents, regions, blocs, landforms). Fully customizable stroke width and color via CSS; icons inherit `currentColor` by default, so they adapt to your text color out of the box.
+**799 geographic map icons as tree-shakable vanilla-JS components** - 255 countries + 167 areas (continents, regions, blocs, landforms) + 377 subdivisions (states, provinces, parishes). Fully customizable stroke width and color via CSS; icons inherit `currentColor` by default, so they adapt to your text color out of the box.
 
 > ⚖️ **Dual-licensed: GPLv3 _or_ Commercial.**
 > Free to use in open-source projects under **GPL-3.0-only** (your project must also be GPL).
@@ -28,13 +28,15 @@ Mark up placeholders with `data-geoicon="<code>"`, then register the icons you u
 <i data-geoicon="us" class="flag"></i>
 <i data-geoicon="jp" class="flag" aria-label="Japan"></i>
 <nav><i data-geoicon="africa"></i></nav>
+<i data-geoicon="us-texas" aria-label="Texas"></i>
 ```
 
 ```js
 import { createGeoIcons, Us, Jp } from '@geoicons/vanilla/countries';
 import { Africa } from '@geoicons/vanilla/areas';
+import { UsTexas } from '@geoicons/vanilla/subdivisions';
 
-createGeoIcons({ us: Us, jp: Jp, africa: Africa });
+createGeoIcons({ us: Us, jp: Jp, africa: Africa, 'us-texas': UsTexas });
 ```
 
 Each `<i data-geoicon="us">` is replaced by that icon's `<svg>`. Elements whose key you didn't register are left untouched. Call `createGeoIcons` again after injecting new DOM (SPA route change, htmx swap) to hydrate fresh nodes. Options: `createGeoIcons(icons, { attr: 'data-geoicon', root: document })`.
@@ -43,7 +45,7 @@ Each `<i data-geoicon="us">` is replaced by that icon's `<svg>`. Elements whose 
 
 ### Why the import map
 
-The `{ us: Us }` map is what keeps the package tree-shakable: because you statically `import { Us }`, the bundler ships only that icon. HTML attributes are invisible to bundlers, so an icon you reference in markup but never register simply won't render - which is exactly what stops the whole 422-icon catalog from being pulled in. (This is the deliberate difference from Lucide's zero-argument `createIcons()`, which reaches into a full internal registry.)
+The `{ us: Us }` map is what keeps the package tree-shakable: because you statically `import { Us }`, the bundler ships only that icon. HTML attributes are invisible to bundlers, so an icon you reference in markup but never register simply won't render - which is exactly what stops the whole 799-icon catalog from being pulled in. (This is the deliberate difference from Lucide's zero-argument `createIcons()`, which reaches into a full internal registry.)
 
 ## Styling - all CSS
 
@@ -71,7 +73,7 @@ Icons render at a `24px` default, `stroke-width` `1`, `stroke="currentColor"`, `
 
 ## Naming & imports
 
-Icons are named from **ISO 3166-1 alpha-2** codes (PascalCase): `us` → `Us`, `jp` → `Jp`, `au-mainland` → `AuMainland`. Areas use slug PascalCase: `africa` → `Africa`, `european-union-eu` → `EuropeanUnionEu`. The `data-geoicon` key is whatever string you map to the factory (the lowercase code reads naturally: `data-geoicon="us"` → `{ us: Us }`).
+Icons are named from **ISO 3166-1 alpha-2** codes (PascalCase): `us` → `Us`, `jp` → `Jp`, `au-mainland` → `AuMainland`. Areas use slug PascalCase: `africa` → `Africa`, `european-union-eu` → `EuropeanUnionEu`. Subdivisions are the parent country code plus the subdivision name: `us-texas` → `UsTexas`, `jm-kingston` → `JmKingston`. The `data-geoicon` key is whatever string you map to the factory (the lowercase code reads naturally: `data-geoicon="us"` → `{ us: Us }`).
 
 ```js
 // Country icons:
@@ -79,6 +81,9 @@ import { Us, Jp, Fr } from '@geoicons/vanilla/countries';
 
 // Areas - continents, regions, blocs, landforms:
 import { Africa, Asia, Europe, EuropeanUnionEu } from '@geoicons/vanilla/areas';
+
+// Subdivisions - states, provinces, parishes:
+import { UsTexas, CaOntario, JmKingston } from '@geoicons/vanilla/subdivisions';
 ```
 
 ## Accessibility

@@ -1,0 +1,52 @@
+// SPDX-License-Identifier: GPL-3.0-only
+// Commercial license available at https://geoicons.io
+import * as Vue from 'vue';
+import { noteIconRender } from '@geoicons/core';
+
+const { defineComponent, h } = Vue;
+
+const BODY = "<path stroke-linejoin=\"round\" d=\"M1.439 9.642a.6.6 0 0 0-.162.564l.497 2.121a2 2 0 0 1 .046.625l-.393 4.635a2 2 0 0 0 .136.911l.311.778a2 2 0 0 1 .134.932l-.101 1.071a.3.3 0 0 0 .306.329l4.95-.133a.3.3 0 0 0 .29-.343l-.365-2.549a.3.3 0 0 1 .426-.313l1.44.684a2 2 0 0 0 .755.191l3.532.183a1 1 0 0 0 .74-.273l.198-.187a1 1 0 0 0 .311-.752l-.176-6.74a2 2 0 0 0-.477-1.246l-.515-.605a.8.8 0 0 1 .023-1.064l.363-.39a.8.8 0 0 1 .784-.23l3.415.879a1 1 0 0 0 1.084-.418l.9-1.363a1 1 0 0 1 .804-.449l1.488-.046a.611.611 0 0 0 .497-.94l-1.76-2.753a.6.6 0 0 0-.657-.258l-4.439 1.154a2 2 0 0 0-.685.327l-.745.55a2 2 0 0 1-1.08.39l-2.735.147a1 1 0 0 0-.647.286L8.186 7.064a1 1 0 0 1-.995.243l-2.13-.654a.8.8 0 0 0-.797.196z\"/>";
+
+export const BbSaintPeter = /*#__PURE__*/ defineComponent({
+  name: 'GeoBbSaintPeter',
+  inheritAttrs: false,
+  props: {
+    size: { type: [Number, String], default: 24 },
+    strokeWidth: { type: [Number, String], default: 1 },
+  },
+  setup(props, { attrs }) {
+    // Compliance nudge: warns once if icons render without the GeoiconsLicense plugin.
+    // Client-only + deferred inside noteIconRender; no-op during SSR.
+    noteIconRender();
+    // uid is stable per instance — compute once. Prefer Vue 3.5+ useId()
+    // (SSR-safe, cross-app-unique); fall back to the per-instance uid on 3.0–3.4.
+    const uid =
+      typeof Vue.useId === 'function'
+        ? Vue.useId()
+        : `geo-${Vue.getCurrentInstance()?.uid ?? 0}`;
+    // Read attrs['aria-label'] inside the render fn (not setup) so a reactive
+    // aria-label stays in sync — setup runs once, only the render fn re-runs.
+    return () => {
+      const label = attrs['aria-label'] as string | undefined;
+      return h(
+        'svg',
+        {
+          viewBox: '0 0 24 24',
+          width: props.size,
+          height: props.size,
+          stroke: 'currentColor',
+          'stroke-width': props.strokeWidth,
+          fill: 'none',
+          role: label ? 'img' : undefined,
+          ...attrs,
+          'aria-labelledby': label ? `${uid}-title` : undefined,
+          'aria-hidden': label ? undefined : true,
+        },
+        [
+          label ? h('title', { id: `${uid}-title` }, label) : null,
+          h('g', { innerHTML: BODY }),
+        ],
+      );
+    };
+  },
+});

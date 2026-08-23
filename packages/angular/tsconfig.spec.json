@@ -13,5 +13,5 @@
     "compilationMode": "full",
     "strictTemplates": true
   },
-  "include": ["src/**/*.ts", "countries/**/*.ts", "areas/**/*.ts"]
+  "include": ["src/**/*.ts", "countries/**/*.ts", "areas/**/*.ts", "subdivisions/**/*.ts"]
 }

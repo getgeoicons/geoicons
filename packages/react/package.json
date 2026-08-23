@@ -1,7 +1,7 @@
 {
   "name": "@geoicons/react",
   "version": "1.2.0",
-  "description": "422 geographic map SVG icons (255 countries & territories + 167 world areas) as tree-shakable React components — control weight, color, and fill with props, themed via currentColor.",
+  "description": "799 geographic map SVG icons (255 countries & territories + 167 world areas + 377 subdivisions) as tree-shakable React components — control weight, color, and fill with props, themed via currentColor.",
   "license": "GPL-3.0-only",
   "author": "GeoIcons (https://geoicons.io)",
   "homepage": "https://geoicons.io",
@@ -45,6 +45,10 @@
     "./countries": {
       "types": "./dist/countries/base/index.d.ts",
       "import": "./dist/countries/base/index.js"
+    },
+    "./subdivisions": {
+      "types": "./dist/subdivisions/base/index.d.ts",
+      "import": "./dist/subdivisions/base/index.js"
     }
   },
   "main": "./dist/index.js",

@@ -4,7 +4,7 @@
 [![license](https://img.shields.io/npm/l/@geoicons/vue.svg)](./LICENSE)
 [![tree-shakable](https://img.shields.io/badge/tree--shakable-yes-brightgreen.svg)](#tree-shaking)
 
-**422 geographic map icons as tree-shakable Vue 3 components** - 255 countries + 167 areas (continents, regions, blocs, landforms). Fully customizable stroke width and color via props; icons inherit `currentColor` by default, so they adapt to your text color out of the box.
+**799 geographic map icons as tree-shakable Vue 3 components** - 255 countries + 167 areas (continents, regions, blocs, landforms) + 377 subdivisions (states, provinces, parishes). Fully customizable stroke width and color via props; icons inherit `currentColor` by default, so they adapt to your text color out of the box.
 
 > ⚖️ **Dual-licensed: GPLv3 _or_ Commercial.**
 > Free to use in open-source projects under **GPL-3.0-only** (your project must also be GPL).
@@ -26,12 +26,14 @@ Requires **Vue 3** (3.0+). On **Vue 3.5+** it uses the built-in `useId()` for st
 <script setup lang="ts">
 import { Us, Jp } from '@geoicons/vue/countries';
 import { Africa } from '@geoicons/vue/areas';
+import { UsTexas } from '@geoicons/vue/subdivisions';
 </script>
 
 <template>
   <Us :size="48" />
   <Jp :size="48" :stroke-width="0.5" class="text-blue-600" />
   <Africa :size="48" />
+  <UsTexas :size="48" />
 </template>
 ```
 
@@ -82,7 +84,7 @@ fill color:
 
 ## Naming & imports
 
-Icons are named from **ISO 3166-1 alpha-2** codes (PascalCase): `us` → `Us`, `jp` → `Jp`, `au-mainland` → `AuMainland`. Areas use slug PascalCase: `africa` → `Africa`, `european-union-eu` → `EuropeanUnionEu`.
+Icons are named from **ISO 3166-1 alpha-2** codes (PascalCase): `us` → `Us`, `jp` → `Jp`, `au-mainland` → `AuMainland`. Areas use slug PascalCase: `africa` → `Africa`, `european-union-eu` → `EuropeanUnionEu`. Subdivisions are the parent country code plus the subdivision name: `us-texas` → `UsTexas`, `ca-ontario` → `CaOntario`, `jm-kingston` → `JmKingston`.
 
 ```ts
 // Country icons:
@@ -90,6 +92,9 @@ import { Us, Jp, Fr } from '@geoicons/vue/countries';
 
 // Areas - continents, regions, blocs, landforms:
 import { Africa, Asia, Europe, EuropeanUnionEu } from '@geoicons/vue/areas';
+
+// Subdivisions - states, provinces, parishes:
+import { UsTexas, CaOntario, JmKingston } from '@geoicons/vue/subdivisions';
 ```
 
 ## Accessibility
