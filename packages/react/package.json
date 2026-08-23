@@ -25,11 +25,15 @@
     "countries",
     "territories",
     "areas",
+    "subdivisions",
+    "states",
+    "provinces",
     "country-map",
     "react",
     "react-component",
     "tree-shakable",
-    "iso-3166"
+    "iso-3166",
+    "iso-3166-2"
   ],
   "sideEffects": false,
   "type": "module",

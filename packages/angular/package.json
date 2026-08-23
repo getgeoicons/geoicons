@@ -25,12 +25,16 @@
     "countries",
     "territories",
     "areas",
+    "subdivisions",
+    "states",
+    "provinces",
     "country-map",
     "angular",
     "angular-component",
     "standalone-component",
     "tree-shakable",
-    "iso-3166"
+    "iso-3166",
+    "iso-3166-2"
   ],
   "sideEffects": false,
   "//": "main/module/types intentionally omitted: ng-packagr generates the published dist/package.json manifest; the exports map below is only for local (test/site) resolution.",
