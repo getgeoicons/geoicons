@@ -84,7 +84,7 @@ fill color:
 
 ## Naming & imports
 
-Icons are named from **ISO 3166-1 alpha-2** codes (PascalCase): `us` → `Us`, `jp` → `Jp`, `au-mainland` → `AuMainland`. Every country also ships a **full-name alias** — `UnitedStates` for `Us`, `Bhutan` for `Bt`, `SouthKorea` for `Kr` — pointing at the same component, so import whichever reads better; tree-shaking bundles exactly one either way. Areas use slug PascalCase: `africa` → `Africa`, `european-union-eu` → `EuropeanUnionEu`. Subdivisions are the parent country code plus the subdivision name: `us-texas` → `UsTexas`, `ca-ontario` → `CaOntario`, `jm-kingston` → `JmKingston`.
+Icons are named from **ISO 3166-1 alpha-2** codes (PascalCase): `us` → `Us`, `jp` → `Jp`, `au-mainland` → `AuMainland`. Every country also ships a **full-name alias** — `UnitedStates` for `Us`, `Bhutan` for `Bt`, `SouthKorea` for `Kr` — pointing at the same component, so import whichever reads better; tree-shaking bundles exactly one either way. Areas use slug PascalCase: `africa` → `Africa`, `european-union-eu` → `EuropeanUnion`. Subdivisions are the parent country code plus the subdivision name: `us-texas` → `UsTexas`, `ca-ontario` → `CaOntario`, `jm-kingston` → `JmKingston`.
 
 ```ts
 // Country icons - by ISO code or full name (same component):
@@ -92,7 +92,7 @@ import { Us, Jp, Fr } from '@geoicons/vue/countries';
 import { UnitedStates, Japan, France } from '@geoicons/vue/countries';
 
 // Areas - continents, regions, blocs, landforms:
-import { Africa, Asia, Europe, EuropeanUnionEu } from '@geoicons/vue/areas';
+import { Africa, Asia, Europe, EuropeanUnion } from '@geoicons/vue/areas';
 
 // Subdivisions - states, provinces, parishes:
 import { UsTexas, CaOntario, JmKingston } from '@geoicons/vue/subdivisions';

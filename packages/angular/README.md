@@ -68,13 +68,13 @@ Anything else - `class`, `style`, `data-*` - goes on the `<geoicon-*>` host elem
 
 ## Naming & imports
 
-Icons are named from **ISO 3166-1 alpha-2** codes (PascalCase → component + `geoicon-*` selector): `us` → `Us` / `<geoicon-us>`, `au-mainland` → `AuMainland` / `<geoicon-au-mainland>`. Every country class also ships a **full-name alias** — `UnitedStates` for `Us`, `Bhutan` for `Bt`, `SouthKorea` for `Kr` — the same component under a readable import name (the selector stays the ISO one, `<geoicon-us>`). Areas use slug PascalCase: `africa` → `Africa`, `european-union-eu` → `EuropeanUnionEu`. Subdivisions are the parent country code plus the subdivision name: `us-texas` → `UsTexas` / `<geoicon-us-texas>`, `jm-kingston` → `JmKingston` / `<geoicon-jm-kingston>`.
+Icons are named from **ISO 3166-1 alpha-2** codes (PascalCase → component + `geoicon-*` selector): `us` → `Us` / `<geoicon-us>`, `au-mainland` → `AuMainland` / `<geoicon-au-mainland>`. Every country class also ships a **full-name alias** — `UnitedStates` for `Us`, `Bhutan` for `Bt`, `SouthKorea` for `Kr` — the same component under a readable import name (the selector stays the ISO one, `<geoicon-us>`). Areas use slug PascalCase: `africa` → `Africa`, `european-union-eu` → `EuropeanUnion`. Subdivisions are the parent country code plus the subdivision name: `us-texas` → `UsTexas` / `<geoicon-us-texas>`, `jm-kingston` → `JmKingston` / `<geoicon-jm-kingston>`.
 
 ```ts
 // Country classes - by ISO code or full name (same component, selector unchanged):
 import { Us, Jp, Fr } from '@geoicons/angular/countries';
 import { UnitedStates, Japan, France } from '@geoicons/angular/countries';
-import { Africa, Asia, Europe, EuropeanUnionEu } from '@geoicons/angular/areas';
+import { Africa, Asia, Europe, EuropeanUnion } from '@geoicons/angular/areas';
 import { UsTexas, CaOntario, MxJalisco } from '@geoicons/angular/subdivisions';
 ```
 

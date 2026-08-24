@@ -58,6 +58,7 @@ export { Ecowas } from './Ecowas';
 export { Eurasia } from './Eurasia';
 export { Europe } from './Europe';
 export { EuropeMainland } from './EuropeMainland';
+export { EuropeanUnionEu as EuropeanUnion } from './EuropeanUnionEu';
 export { EuropeanUnionEu } from './EuropeanUnionEu';
 export { Eurozone } from './Eurozone';
 export { Fennoscandia } from './Fennoscandia';
