@@ -86,11 +86,12 @@ fill color:
 
 ## Naming & imports
 
-Icons are named from **ISO 3166-1 alpha-2** codes (PascalCase): `us` → `Us`, `jp` → `Jp`, `au-mainland` → `AuMainland`. Areas use slug PascalCase: `africa` → `Africa`, `european-union-eu` → `EuropeanUnionEu`. Subdivisions are the parent country code plus the subdivision name: `us-texas` → `UsTexas`, `ca-ontario` → `CaOntario`, `jm-kingston` → `JmKingston`.
+Icons are named from **ISO 3166-1 alpha-2** codes (PascalCase): `us` → `Us`, `jp` → `Jp`, `au-mainland` → `AuMainland`. Every country also ships a **full-name alias** — `UnitedStates` for `Us`, `Bhutan` for `Bt`, `SouthKorea` for `Kr` — pointing at the same component, so import whichever reads better; tree-shaking bundles exactly one either way. Areas use slug PascalCase: `africa` → `Africa`, `european-union-eu` → `EuropeanUnionEu`. Subdivisions are the parent country code plus the subdivision name: `us-texas` → `UsTexas`, `ca-ontario` → `CaOntario`, `jm-kingston` → `JmKingston`.
 
 ```tsx
-// Country icons:
+// Country icons - by ISO code or full name (same component):
 import { Us, Jp, Fr } from '@geoicons/react/countries';
+import { UnitedStates, Japan, France } from '@geoicons/react/countries';
 
 // Areas - continents, regions, blocs, landforms:
 import { Africa, Asia, Europe, EuropeanUnionEu } from '@geoicons/react/areas';
