@@ -23,15 +23,15 @@ Requires **React 18+**.
 ## Use
 
 ```tsx
-import { Us, Jp } from '@geoicons/react/countries';
+import { UnitedStates, Japan } from '@geoicons/react/countries';
 import { Africa, Europe } from '@geoicons/react/areas';
 import { UsTexas } from '@geoicons/react/subdivisions';
 
 export function Example() {
   return (
     <div>
-      <Us size={48} />
-      <Jp size={48} strokeWidth={0.5} className="text-blue-600" />
+      <UnitedStates size={48} />
+      <Japan size={48} strokeWidth={0.5} className="text-blue-600" />
       <Africa size={48} />
       <UsTexas size={48} />
     </div>

@@ -32,11 +32,11 @@ Mark up placeholders with `data-geoicon="<code>"`, then register the icons you u
 ```
 
 ```js
-import { createGeoIcons, Us, Jp } from '@geoicons/vanilla/countries';
+import { createGeoIcons, UnitedStates, Japan } from '@geoicons/vanilla/countries';
 import { Africa } from '@geoicons/vanilla/areas';
 import { UsTexas } from '@geoicons/vanilla/subdivisions';
 
-createGeoIcons({ us: Us, jp: Jp, africa: Africa, 'us-texas': UsTexas });
+createGeoIcons({ us: UnitedStates, jp: Japan, africa: Africa, 'us-texas': UsTexas });
 ```
 
 Each `<i data-geoicon="us">` is replaced by that icon's `<svg>`. Elements whose key you didn't register are left untouched. Call `createGeoIcons` again after injecting new DOM (SPA route change, htmx swap) to hydrate fresh nodes. Options: `createGeoIcons(icons, { attr: 'data-geoicon', root: document })`.

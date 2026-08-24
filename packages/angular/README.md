@@ -26,13 +26,14 @@ Each icon is a standalone component. Import the ones you use and add them to a c
 
 ```ts
 import { Component } from '@angular/core';
-import { Us, Jp } from '@geoicons/angular/countries';
+import { UnitedStates, Japan } from '@geoicons/angular/countries';
 import { Africa } from '@geoicons/angular/areas';
 import { UsTexas } from '@geoicons/angular/subdivisions';
 
 @Component({
   selector: 'app-root',
-  imports: [Us, Jp, Africa, UsTexas],
+  // Import by full name or ISO code (Us, Jp). The selector stays ISO-based either way.
+  imports: [UnitedStates, Japan, Africa, UsTexas],
   template: `
     <geoicon-us [size]="48" />
     <geoicon-jp [size]="48" [strokeWidth]="0.5" class="text-blue-600" />

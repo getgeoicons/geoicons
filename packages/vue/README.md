@@ -24,14 +24,14 @@ Requires **Vue 3** (3.0+). On **Vue 3.5+** it uses the built-in `useId()` for st
 
 ```vue
 <script setup lang="ts">
-import { Us, Jp } from '@geoicons/vue/countries';
+import { UnitedStates, Japan } from '@geoicons/vue/countries';
 import { Africa } from '@geoicons/vue/areas';
 import { UsTexas } from '@geoicons/vue/subdivisions';
 </script>
 
 <template>
-  <Us :size="48" />
-  <Jp :size="48" :stroke-width="0.5" class="text-blue-600" />
+  <UnitedStates :size="48" />
+  <Japan :size="48" :stroke-width="0.5" class="text-blue-600" />
   <Africa :size="48" />
   <UsTexas :size="48" />
 </template>
