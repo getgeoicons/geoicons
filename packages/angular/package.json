@@ -70,14 +70,14 @@
     "build": "ng-packagr -p ng-package.json -c tsconfig.lib.json"
   },
   "devDependencies": {
-    "@angular/common": "^22.1.4",
+    "@angular/common": "^22.1.5",
     "@angular/compiler": "^22.1.4",
-    "@angular/compiler-cli": "^22.1.4",
+    "@angular/compiler-cli": "^22.1.5",
     "@angular/core": "^22.1.4",
-    "@angular/platform-browser": "^22.1.4",
-    "@angular/platform-browser-dynamic": "^22.1.4",
-    "@angular/platform-server": "^22.1.4",
+    "@angular/platform-browser": "^22.1.5",
+    "@angular/platform-browser-dynamic": "^22.1.5",
+    "@angular/platform-server": "^22.1.5",
     "ng-packagr": "^22.1.1",
-    "zone.js": "^0.16.2"
+    "zone.js": "^0.16.3"
   }
 }
