@@ -32,7 +32,8 @@ Mark up placeholders with `data-geoicon="<code>"`, then register the icons you u
 ```
 
 ```js
-import { createGeoIcons, UnitedStates, Japan } from '@geoicons/vanilla/countries';
+import { createGeoIcons } from '@geoicons/vanilla';
+import { UnitedStates, Japan } from '@geoicons/vanilla/countries';
 import { Africa } from '@geoicons/vanilla/areas';
 import { UsTexas } from '@geoicons/vanilla/subdivisions';
 

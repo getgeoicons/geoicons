@@ -8,7 +8,8 @@
  * references itself: the caller supplies the `{ key → factory }` map from their
  * own named imports, so only the icons they wire can ever enter the bundle.
  *
- *   import { createGeoIcons, Us, Jp } from '@geoicons/vanilla/countries';
+ *   import { createGeoIcons } from '@geoicons/vanilla';
+ *   import { Us, Jp } from '@geoicons/vanilla/countries';
  *   createGeoIcons({ us: Us, jp: Jp });   // only Us + Jp bundled
  *
  * Elements whose key is not in the supplied map are left untouched.
