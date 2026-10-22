@@ -5,6 +5,6 @@
 export const PUBLIC_KEY_JWK: JsonWebKey = {
   "kty": "EC",
   "crv": "P-256",
-  "x": "HkHkadZP0cWxupxgwBjDkRF_f8m0ItEAzpBeoZy7In0",
-  "y": "33QJaDakw8MGDu2GmHelyqXKYvP4DLRn0RJEXUHbUJM"
+  "x": "0dj-OfkbL4RahDtvMzbmEwrjSRfv-awKC1dIGj7HqE8",
+  "y": "dsp1o-IKUvc5L0KD6i5xjWINwswgzcauhhfpcmZAnzg"
 };
