@@ -1,7 +1,7 @@
 {
   "name": "@geoicons/angular",
   "version": "1.4.2",
-  "description": "799 geographic map SVG icons (255 countries & territories + 167 world areas + 377 subdivisions) as tree-shakable Angular standalone components — control weight and fill, dual-licensed GPLv3 + Commercial.",
+  "description": "802 geographic map SVG icons (258 countries & territories + 167 world areas + 377 subdivisions) as tree-shakable Angular standalone components — control weight and fill, dual-licensed GPLv3 + Commercial.",
   "license": "GPL-3.0-only",
   "author": "GeoIcons (https://geoicons.io)",
   "homepage": "https://geoicons.io",

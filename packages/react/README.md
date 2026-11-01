@@ -4,7 +4,7 @@
 [![license](https://img.shields.io/npm/l/@geoicons/react.svg)](./LICENSE)
 [![tree-shakable](https://img.shields.io/badge/tree--shakable-yes-brightgreen.svg)](#tree-shaking)
 
-**799 geographic map icons as tree-shakable React components** - 255 countries + 167 areas (continents, regions, blocs, landforms) + 377 subdivisions (states, provinces, parishes). Fully customizable stroke width and color via props; icons inherit `currentColor` by default, so they adapt to your text color out of the box.
+**802 geographic map icons as tree-shakable React components** - 258 countries + 167 areas (continents, regions, blocs, landforms) + 377 subdivisions (states, provinces, parishes). Fully customizable stroke width and color via props; icons inherit `currentColor` by default, so they adapt to your text color out of the box.
 
 > ⚖️ **Dual-licensed: GPLv3 _or_ Commercial.**
 > Free to use in open-source projects under **GPL-3.0-only** (your project must also be GPL).

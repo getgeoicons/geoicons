@@ -1,5 +1,6 @@
 // SPDX-License-Identifier: GPL-3.0-only
 // Commercial license available at https://geoicons.io
+export { Abkhazia } from './Abkhazia';
 export { Ad as Andorra } from './Ad';
 export { Ad } from './Ad';
 export { Ae as UnitedArabEmirates } from './Ae';
@@ -134,6 +135,8 @@ export { Ec as Ecuador } from './Ec';
 export { Ec } from './Ec';
 export { Ee as Estonia } from './Ee';
 export { Ee } from './Ee';
+export { EeMainland as EstoniaMainland } from './EeMainland';
+export { EeMainland } from './EeMainland';
 export { Eg as Egypt } from './Eg';
 export { Eg } from './Eg';
 export { Eh as WesternSahara } from './Eh';
@@ -253,6 +256,8 @@ export { Kw as Kuwait } from './Kw';
 export { Kw } from './Kw';
 export { Ky as CaymanIslands } from './Ky';
 export { Ky } from './Ky';
+export { KyGrandCayman as CaymanIslandsGrandCayman } from './KyGrandCayman';
+export { KyGrandCayman } from './KyGrandCayman';
 export { Kz as Kazakhstan } from './Kz';
 export { Kz } from './Kz';
 export { La as Laos } from './La';
