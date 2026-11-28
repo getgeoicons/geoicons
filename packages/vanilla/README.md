@@ -3,6 +3,7 @@
 [![npm version](https://img.shields.io/npm/v/@geoicons/vanilla.svg)](https://www.npmjs.com/package/@geoicons/vanilla)
 [![license](https://img.shields.io/npm/l/@geoicons/vanilla.svg)](./LICENSE)
 [![tree-shakable](https://img.shields.io/badge/tree--shakable-yes-brightgreen.svg)](#tree-shaking)
+[![Star on GitHub](https://img.shields.io/badge/Star_on-GitHub-181717?logo=github)](https://github.com/getgeoicons/geoicons)
 
 **802 geographic map icons as tree-shakable vanilla-JS components** - 258 countries + 167 areas (continents, regions, blocs, landforms) + 377 subdivisions (states, provinces, parishes). Fully customizable stroke width and color via CSS; icons inherit `currentColor` by default, so they adapt to your text color out of the box.
 
@@ -124,6 +125,8 @@ initGeoiconsLicense('GPL-MY-PROJECT-IS-OPEN-SOURCE');
 > Building closed-source/commercial? Get a license at **[geoicons.io](https://geoicons.io)**. Using these icons in a proprietary app without a commercial license violates the GPLv3.
 
 `initGeoiconsLicense` resolves with the status (`'commercial' | 'gpl' | 'unverified' | 'invalid'`) so you can reflect it in your own UI.
+
+If GeoIcons saves you time, a [star on GitHub](https://github.com/getgeoicons/geoicons) helps other developers find it.
 
 ---
 

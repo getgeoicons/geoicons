@@ -3,6 +3,7 @@
 [![npm version](https://img.shields.io/npm/v/@geoicons/vue.svg)](https://www.npmjs.com/package/@geoicons/vue)
 [![license](https://img.shields.io/npm/l/@geoicons/vue.svg)](./LICENSE)
 [![tree-shakable](https://img.shields.io/badge/tree--shakable-yes-brightgreen.svg)](#tree-shaking)
+[![Star on GitHub](https://img.shields.io/badge/Star_on-GitHub-181717?logo=github)](https://github.com/getgeoicons/geoicons)
 
 **802 geographic map icons as tree-shakable Vue 3 components** - 258 countries + 167 areas (continents, regions, blocs, landforms) + 377 subdivisions (states, provinces, parishes). Fully customizable stroke width and color via props; icons inherit `currentColor` by default, so they adapt to your text color out of the box.
 
@@ -148,6 +149,8 @@ Optional composable to read license status (reactive) in your own UI:
 import { useGeoiconsLicense } from '@geoicons/vue';
 const status = useGeoiconsLicense(); // Ref<'commercial' | 'gpl' | 'unverified' | 'invalid'>
 ```
+
+If GeoIcons saves you time, a [star on GitHub](https://github.com/getgeoicons/geoicons) helps other developers find it.
 
 ---
 

@@ -8,6 +8,7 @@
 
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](./LICENSE)
 [![Commercial license available](https://img.shields.io/badge/License-Commercial-brightgreen.svg)](./COMMERCIAL-LICENSE.md)
+[![Star on GitHub](https://img.shields.io/badge/Star_on-GitHub-181717?logo=github)](https://github.com/getgeoicons/geoicons)
 
 </div>
 
@@ -94,6 +95,8 @@ Code PRs are **not** accepted (this is a published mirror of a dual-licensed pro
 Found a vulnerability? Please **don't** open a public issue - see [`SECURITY.md`](./SECURITY.md).
 
 ---
+
+If GeoIcons saves you time, a [star on GitHub](https://github.com/getgeoicons/geoicons) helps other developers find it.
 
 <div align="center">
 
